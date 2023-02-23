@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://kit.fontawesome.com/3c98747aff.js" crossorigin="anonymous"></script>
+    <title>Movies</title>
+</head>
+<body style="background-color: black; height: 100%;">
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid px-">
+            <a class="navbar-brand" href="#">
+                <img width="100px" height="100px" src="./assets/images/mouviehouse.png" alt="mouvie house logo">
+            </a>
+            <button style="background-color: #FF914D;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+                </svg>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a style="color: #FF914D" class="nav-link active" href="#"><i class="fa-solid fa-bookmark"></i> Watchlist</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a style="color: #FF914D" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-magnifying-glass"></i> Search
+                        </a>
+                        <div style="background-color: #FF914D;" class="dropdown-menu my-2 p-4" aria-labelledby="navbarDropdown">
+                           <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label text-dark"><strong>Movie name:</strong></label>
+                                    <input type="text" class="form-control search-input form-elements">
+                                </div>
+
+                                <label for="name" class="form-label text-dark"><strong>Genre(s):</strong></label>
+                                <select class="form-select mb-2 search-input form-elements">
+                                    <option class="select-item" value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+
+                                <label for="name" class="form-label text-dark"><strong>Rating:</strong></label>
+                                <select class="form-select mb-2 search-input form-elements" aria-label="Default select example">
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+
+                                <label for="name" class="form-label text-dark"><strong>Language:</strong></label>
+                                <select class="form-select mb-2 search-input form-elements" aria-label="Default select example">
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+
+                                <button id="search-button">Search</button>
+                           </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main style="min-height: 550px;">
+
+        <section style="border: 1px solid #FF914D;" class="container p-4 m-4 mx-auto">
+            <h1 style="color: #FF914D">Editor's picks</h1>
+            <hr style="background-color: #FF914D; height: 5px;" class="w-50" />
+            <div class="row row-cols-2 row-cols-md-5 justify-content-center">
+                <div class="card bg-dark m-2" style="width: 14rem;">
+                    <img width="200px" height="200px" height src="./assets/images/mouvie.jpeg" class="card-img-top" alt="poster">
+                    <div class="card-body">
+                        <p class="card-text" style="color: #FF914D"><i class="fa-solid fa-star"></i> 8</p>
+                        <p class="card-text" style="color: #FF914D">Mouvie title</p>
+                        <p><a href="#" style="color: #FF914D">See more</a></p>
+                        <center>
+                            <button class="add-to-watchlist mx-auto"><i class="fa-solid fa-bookmark"></i> Add to watchlist</button>
+                        </center>
+                    </div>
+                </div>
+                <div class="card bg-dark m-2" style="width: 14rem;">
+                    <img width="200px" height="200px" height src="./assets/images/mouvie.jpeg" class="card-img-top" alt="poster">
+                    <div class="card-body">
+                        <p class="card-text" style="color: #FF914D"><i class="fa-solid fa-star"></i> 8</p>
+                        <p class="card-text" style="color: #FF914D">Mouvie title</p>
+                        <p><a href="#" style="color: #FF914D">See more</a></p>
+                        <center>
+                            <button class="add-to-watchlist mx-auto"><i class="fa-solid fa-bookmark"></i> Add to watchlist</button>
+                        </center>
+                    </div>
+                </div>
+                <div class="card bg-dark m-2" style="width: 14rem;">
+                    <img width="200px" height="200px" height src="./assets/images/mouvie.jpeg" class="card-img-top" alt="poster">
+                    <div class="card-body">
+                        <p class="card-text" style="color: #FF914D"><i class="fa-solid fa-star"></i> 8</p>
+                        <p class="card-text" style="color: #FF914D">Mouvie title</p>
+                        <p><a href="#" style="color: #FF914D">See more</a></p>
+                        <center>
+                            <button class="add-to-watchlist mx-auto"><i class="fa-solid fa-bookmark"></i> Add to watchlist</button>
+                        </center>
+                    </div>
+                </div>
+                <div class="card bg-dark m-2" style="width: 14rem;">
+                    <img width="200px" height="200px" height src="./assets/images/mouvie.jpeg" class="card-img-top" alt="poster">
+                    <div class="card-body">
+                        <p class="card-text" style="color: #FF914D"><i class="fa-solid fa-star"></i> 8</p>
+                        <p class="card-text" style="color: #FF914D">Mouvie title</p>
+                        <p><a href="#" style="color: #FF914D">See more</a></p>
+                        <center>
+                            <button class="add-to-watchlist mx-auto"><i class="fa-solid fa-bookmark"></i> Add to watchlist</button>
+                        </center>
+                    </div>
+                </div>
+                <div class="card bg-dark m-2" style="width: 14rem;">
+                    <img width="200px" height="200px" height src="./assets/images/mouvie.jpeg" class="card-img-top" alt="poster">
+                    <div class="card-body">
+                        <p class="card-text" style="color: #FF914D"><i class="fa-solid fa-star"></i> 8</p>
+                        <p class="card-text" style="color: #FF914D">Mouvie title</p>
+                        <p><a href="#" style="color: #FF914D">See more</a></p>
+                        <center>
+                            <button class="add-to-watchlist mx-auto"><i class="fa-solid fa-bookmark"></i> Add to watchlist</button>
+                        </center>
+                    </div>
+                </div>
+                <div class="card bg-dark m-2" style="width: 14rem;">
+                    <img width="200px" height="200px" height src="./assets/images/mouvie.jpeg" class="card-img-top" alt="poster">
+                    <div class="card-body">
+                        <p class="card-text" style="color: #FF914D"><i class="fa-solid fa-star"></i> 8</p>
+                        <p class="card-text" style="color: #FF914D">Mouvie title</p>
+                        <p><a href="#" style="color: #FF914D">See more</a></p>
+                        <center>
+                            <button class="add-to-watchlist mx-auto"><i class="fa-solid fa-bookmark"></i> Add to watchlist</button>
+                        </center>
+                    </div>
+                </div>
+                <div class="card bg-dark m-2" style="width: 14rem;">
+                    <img width="200px" height="200px" height src="./assets/images/mouvie.jpeg" class="card-img-top" alt="poster">
+                    <div class="card-body">
+                        <p class="card-text" style="color: #FF914D"><i class="fa-solid fa-star"></i> 8</p>
+                        <p class="card-text" style="color: #FF914D">Mouvie title</p>
+                        <p><a href="#" style="color: #FF914D">See more</a></p>
+                        <center>
+                            <button class="add-to-watchlist mx-auto"><i class="fa-solid fa-bookmark"></i> Add to watchlist</button>
+                        </center>
+                    </div>
+                </div>
+                <div class="card bg-dark m-2" style="width: 14rem;">
+                    <img width="200px" height="200px" height src="./assets/images/mouvie.jpeg" class="card-img-top" alt="poster">
+                    <div class="card-body">
+                        <p class="card-text" style="color: #FF914D"><i class="fa-solid fa-star"></i> 8</p>
+                        <p class="card-text" style="color: #FF914D">Mouvie title</p>
+                        <p><a href="#" style="color: #FF914D">See more</a></p>
+                        <center>
+                            <button class="add-to-watchlist mx-auto"><i class="fa-solid fa-bookmark"></i> Add to watchlist</button>
+                        </center>
+                    </div>
+                </div>
+                <div class="card bg-dark m-2" style="width: 14rem;">
+                    <img width="200px" height="200px" height src="./assets/images/mouvie.jpeg" class="card-img-top" alt="poster">
+                    <div class="card-body">
+                        <p class="card-text" style="color: #FF914D"><i class="fa-solid fa-star"></i> 8</p>
+                        <p class="card-text" style="color: #FF914D">Mouvie title</p>
+                        <p><a href="#" style="color: #FF914D">See more</a></p>
+                        <center>
+                            <button class="add-to-watchlist mx-auto"><i class="fa-solid fa-bookmark"></i> Add to watchlist</button>
+                        </center>
+                    </div>
+                </div>
+                <div class="card bg-dark m-2" style="width: 14rem;">
+                    <img width="200px" height="200px" height src="./assets/images/mouvie.jpeg" class="card-img-top" alt="poster">
+                    <div class="card-body">
+                        <p class="card-text" style="color: #FF914D"><i class="fa-solid fa-star"></i> 8</p>
+                        <p class="card-text" style="color: #FF914D">Mouvie title</p>
+                        <p><a href="#" style="color: #FF914D">See more</a></p>
+                        <center>
+                            <button class="add-to-watchlist mx-auto"><i class="fa-solid fa-bookmark"></i> Add to watchlist</button>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="border: 1px solid #FF914D;" class="container p-4 m-4 mx-auto">
+            <h1 style="color: #FF914D">Latest Movies</h1>
+            <hr style="background-color: #FF914D; height: 5px;" class="w-50" />
+            <div class="row row-cols-2 row-cols-md-5 justify-content-center">
+                <div class="card bg-dark m-2" style="width: 14rem;">
+                    <img width="100px" height="200px" height src="./assets/images/mouvie.jpeg" class="card-img-top" alt="poster">
+                    <div class="card-body">
+                        <p class="card-text" style="color: #FF914D"><i class="fa-solid fa-star"></i> 8</p>
+                        <p class="card-text" style="color: #FF914D">Mouvie title</p>
+                        <p><a href="#" style="color: #FF914D">See more</a></p>
+                        <center>
+                            <button class="add-to-watchlist mx-auto"><i class="fa-solid fa-bookmark"></i> Add to watchlist</button>
+                        </center>
+                    </div>
+                </div>
+                <div class="card bg-dark m-2" style="width: 14rem;">
+                    <img width="200px" height="200px" height src="./assets/images/mouvie.jpeg" class="card-img-top" alt="poster">
+                    <div class="card-body">
+                        <p class="card-text" style="color: #FF914D"><i class="fa-solid fa-star"></i> 8</p>
+                        <p class="card-text" style="color: #FF914D">Mouvie title</p>
+                        <p><a href="#" style="color: #FF914D">See more</a></p>
+                        <center>
+                            <button class="add-to-watchlist mx-auto"><i class="fa-solid fa-bookmark"></i> Add to watchlist</button>
+                        </center>
+                    </div>
+                </div>
+                <div class="card bg-dark m-2" style="width: 14rem;">
+                    <img width="200px" height="200px" height src="./assets/images/mouvie.jpeg" class="card-img-top" alt="poster">
+                    <div class="card-body">
+                        <p class="card-text" style="color: #FF914D"><i class="fa-solid fa-star"></i> 8</p>
+                        <p class="card-text" style="color: #FF914D">Mouvie title</p>
+                        <p><a href="#" style="color: #FF914D">See more</a></p>
+                        <center>
+                            <button class="add-to-watchlist mx-auto"><i class="fa-solid fa-bookmark"></i> Add to watchlist</button>
+                        </center>
+                    </div>
+                </div>
+                <div class="card bg-dark m-2" style="width: 14rem;">
+                    <img width="200px" height="200px" height src="./assets/images/mouvie.jpeg" class="card-img-top" alt="poster">
+                    <div class="card-body">
+                        <p class="card-text" style="color: #FF914D"><i class="fa-solid fa-star"></i> 8</p>
+                        <p class="card-text" style="color: #FF914D">Mouvie title</p>
+                        <p><a href="#" style="color: #FF914D">See more</a></p>
+                        <center>
+                            <button class="add-to-watchlist mx-auto"><i class="fa-solid fa-bookmark"></i> Add to watchlist</button>
+                        </center>
+                    </div>
+                </div>
+                <div class="card bg-dark m-2" style="width: 14rem;">
+                    <img width="200px" height="200px" height src="./assets/images/mouvie.jpeg" class="card-img-top" alt="poster">
+                    <div class="card-body">
+                        <p class="card-text" style="color: #FF914D"><i class="fa-solid fa-star"></i> 8</p>
+                        <p class="card-text" style="color: #FF914D">Mouvie title</p>
+                        <p><a href="#" style="color: #FF914D">See more</a></p>
+                        <center>
+                            <button class="add-to-watchlist mx-auto"><i class="fa-solid fa-bookmark"></i> Add to watchlist</button>
+                        </center>
+                    </div>
+                </div>
+                <div class="card bg-dark m-2" style="width: 14rem;">
+                    <img width="200px" height="200px" height src="./assets/images/mouvie.jpeg" class="card-img-top" alt="poster">
+                    <div class="card-body">
+                        <p class="card-text" style="color: #FF914D"><i class="fa-solid fa-star"></i> 8</p>
+                        <p class="card-text" style="color: #FF914D">Mouvie title</p>
+                        <p><a href="#" style="color: #FF914D">See more</a></p>
+                        <center>
+                            <button class="add-to-watchlist mx-auto"><i class="fa-solid fa-bookmark"></i> Add to watchlist</button>
+                        </center>
+                    </div>
+                </div>
+                <div class="card bg-dark m-2" style="width: 14rem;">
+                    <img width="200px" height="200px" height src="./assets/images/mouvie.jpeg" class="card-img-top" alt="poster">
+                    <div class="card-body">
+                        <p class="card-text" style="color: #FF914D"><i class="fa-solid fa-star"></i> 8</p>
+                        <p class="card-text" style="color: #FF914D">Mouvie title</p>
+                        <p><a href="#" style="color: #FF914D">See more</a></p>
+                        <center>
+                            <button class="add-to-watchlist mx-auto"><i class="fa-solid fa-bookmark"></i> Add to watchlist</button>
+                        </center>
+                    </div>
+                </div>
+                <div class="card bg-dark m-2" style="width: 14rem;">
+                    <img width="200px" height="200px" height src="./assets/images/mouvie.jpeg" class="card-img-top" alt="poster">
+                    <div class="card-body">
+                        <p class="card-text" style="color: #FF914D"><i class="fa-solid fa-star"></i> 8</p>
+                        <p class="card-text" style="color: #FF914D">Mouvie title</p>
+                        <p><a href="#" style="color: #FF914D">See more</a></p>
+                        <center>
+                            <button class="add-to-watchlist mx-auto"><i class="fa-solid fa-bookmark"></i> Add to watchlist</button>
+                        </center>
+                    </div>
+                </div>
+                <div class="card bg-dark m-2" style="width: 14rem;">
+                    <img width="200px" height="200px" height src="./assets/images/mouvie.jpeg" class="card-img-top" alt="poster">
+                    <div class="card-body">
+                        <p class="card-text" style="color: #FF914D"><i class="fa-solid fa-star"></i> 8</p>
+                        <p class="card-text" style="color: #FF914D">Mouvie title</p>
+                        <p><a href="#" style="color: #FF914D">See more</a></p>
+                        <center>
+                            <button class="add-to-watchlist mx-auto"><i class="fa-solid fa-bookmark"></i> Add to watchlist</button>
+                        </center>
+                    </div>
+                </div>
+                <div class="card bg-dark m-2" style="width: 14rem;">
+                    <img width="200px" height="200px" height src="./assets/images/mouvie.jpeg" class="card-img-top" alt="poster">
+                    <div class="card-body">
+                        <p class="card-text" style="color: #FF914D"><i class="fa-solid fa-star"></i> 8</p>
+                        <p class="card-text" style="color: #FF914D">Mouvie title</p>
+                        <p><a href="#" style="color: #FF914D">See more</a></p>
+                        <center>
+                            <button class="add-to-watchlist mx-auto"><i class="fa-solid fa-bookmark"></i> Add to watchlist</button>
+                        </center>
+                    </div>
+                </div>
+            </div>
+            <div class="my-4">
+                <p style="color: #FF914D; cursor: pointer;">1 | 2 | 3|.....| 99 | 100</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center text-lg-start bg-dark" style="color:#FF914D;position:relative; bottom: 0;right: 0;left:0;" >
+        <div class="container p-4 pb-0">
+            <section class="">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Mouvie House</h5>
+                        <p>"Discover, watch, and love your favorite movies with MouvieHouse."</p>
+                        <p>
+                        MouvieHouse is a movie information and watchlist application that allows users to browse, search, and add movies to their personalized watchlist.
+                        </p>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" style="color:#FF914D;">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color:#FF914D;">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color:#FF914D;">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color:#FF914D;">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" style="color:#FF914D;">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color:#FF914D;">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color:#FF914D;">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color:#FF914D;">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" style="color:#FF914D;">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color:#FF914D;">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color:#FF914D;">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color:#FF914D;">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" style="color:#FF914D;">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color:#FF914D;">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color:#FF914D;">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color:#FF914D;">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+            </section>
+            <hr class="mb-4" />
+            <section class="mb-4 text-center">
+                <a class="social-media" href="#!">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="social-media" href="#!">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a class="social-media" href="#!">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a class="social-media" href="#!">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="social-media" href="#!">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a class="social-media" href="#">
+                    <i class="fab fa-github"></i>
+                </a>
+            </section>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2023 Copyright: <a style="color:#FF914D;" href="#">mouvie<img width="50px" height="50px" src="./assets/images/mouviehouse.png" alt="app logo">house.com</a>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap.js"></script>
+</body>
+</html>
